@@ -1,61 +1,63 @@
+<h1>🔥 FireDucks vs Pandas: Speed Benchmark on Large Sales Dataset</h1>
 
-🔥 FireDucks vs Pandas: Speed Benchmark on Large Sales Dataset
+<p>This project benchmarks the performance of <strong>FireDucks</strong> vs <strong>Pandas</strong> for handling large-scale data operations using a synthetic sales dataset with <strong>1 million rows</strong>.</p>
 
-This project benchmarks the performance of FireDucks vs Pandas for handling large-scale data operations using a synthetic sales dataset with 1 million rows.
+<p>We measure the speed of each library across common data engineering tasks such as reading, filtering, grouping, and sorting.</p>
 
-We measure the speed of each library across common data engineering tasks such as reading, filtering, grouping, and sorting.
-📂 What's Inside
-🔧 Operations Benchmarked
+<hr>
 
-  1.Generate a Large Dataset
-    Create a synthetic sales dataset with product names, regions, prices, and units sold.
+<h2>📂 What's Inside</h2>
 
-  2.  Read CSV File
-    Compare read times for loading a large CSV using Pandas and FireDucks.
+<h3>🔧 Operations Benchmarked</h3>
+<ol>
+  <li><strong>Generate a Large Dataset</strong><br>Create a synthetic sales dataset with product names, regions, prices, and units sold.</li>
+  <li><strong>Read CSV File</strong><br>Compare read times for loading a large CSV using Pandas and FireDucks.</li>
+  <li><strong>Filter Data</strong><br>Select rows where <code>price &gt; 100</code>.</li>
+  <li><strong>Group By</strong><br>Calculate the average price of products sold, grouped by region.</li>
+  <li><strong>Sort Values</strong><br>Sort the grouped results by average price in descending order.</li>
+</ol>
 
-  3. Filter Data
-    Select rows where price > 100.
+<p>Each operation's execution time is logged for both Pandas and FireDucks to highlight performance differences.</p>
 
-  4. Group By
-    Calculate the average price of products sold, grouped by region.
- 
-  5. Sort Values
-    Sort the grouped results by average price in descending order.
+<hr>
 
-Each operation's execution time is logged for both Pandas and FireDucks to highlight performance differences.
-🧪 How to Run
+<h2>🧪 How to Run</h2>
 
-  Clone the repo:
+<ol>
+  <li><strong>Clone the repo:</strong>
+    <pre><code>git clone https://github.com/Srabany/FireDucks_vs._Pandas_Comparisons.git
+cd FireDucks_vs._Pandas_Comparisons</code></pre>
+  </li>
 
-git clone https://github.com/Srabany/FireDucks_vs._Pandas_Comparisons.git
-cd FireDucks_vs._Pandas_Comparisons
+  <li><strong>Install Dependencies:</strong>
+    <pre><code>pip install pandas fireducks numpy</code></pre>
+  </li>
 
-Install Dependencies:
+  <li><strong>Run the Script:</strong>
+    <pre><code>python fireducks_vs_pandas_sales_benchmark.py</code></pre>
 
-pip install pandas fireducks numpy
+    <p>The script will:</p>
+    <ul>
+      <li>Generate a CSV with 1M rows</li>
+      <li>Run timed operations using both libraries</li>
+      <li>Print performance results to the console</li>
+    </ul>
+  </li>
+</ol>
 
-Run the Script:
+<hr>
 
-  1.python fireducks_vs_pandas_sales_benchmark.py
+<h2>📦 Dataset</h2>
 
-The script will:
+<p>The dataset is created automatically by the script and saved as:</p>
+<pre><code>sales_data.csv</code></pre>
+<p>No need to download anything manually.</p>
 
-  Generate a CSV with 1M rows
+<hr>
 
-  Run timed operations using both libraries
+<h2>📊 Sample Output</h2>
 
-  Print performance results to the console
-
-📦 Dataset
-
-The dataset is created automatically by the script and saved as:
-
-sales_data.csv
-
-You don’t need to download anything manually.
-📊 Sample Output
-
-✅ Created 'sales_data.csv'
+<pre><code>✅ Created 'sales_data.csv'
 📄 Pandas Read Time: 1.2423 sec
 🔥 FireDucks Read Time: 0.3391 sec
 📉 Pandas Filter Time: 0.0874 sec
@@ -64,22 +66,27 @@ You don’t need to download anything manually.
 🔥 FireDucks GroupBy Time: 0.0312 sec
 🔽 Pandas Sort Time: 0.0047 sec
 🔥 FireDucks Sort Time: 0.0021 sec
-✅ Sales Benchmark Completed!
+✅ Sales Benchmark Completed!</code></pre>
 
-🚀 Purpose
+<hr>
 
-This mini-project serves as a simple yet powerful demonstration of how FireDucks can provide speed advantages over Pandas in real-world data workflows. Ideal for:
+<h2>🚀 Purpose</h2>
 
-  Data Engineers 👷‍♂️
+<p>This mini-project serves as a simple yet powerful demonstration of how <strong>FireDucks</strong> can provide speed advantages over <strong>Pandas</strong> in real-world data workflows. Ideal for:</p>
+<ul>
+  <li>Data Engineers 👷‍♂️</li>
+  <li>Analysts 📊</li>
+  <li>Performance geeks ⚡</li>
+  <li>Anyone working with <strong>big data in Python</strong></li>
+</ul>
 
-  Analysts 📊
+<hr>
 
-  Performance geeks ⚡
+<h2>🐍 Built With</h2>
 
-   Anyone working with big data in Python
-
-🐍 Built With
-    Pandas 🐼
-    FireDucks 🔥🦆
-    NumPy
-    Python 3.7+
+<ul>
+  <li><a href="https://pandas.pydata.org/">Pandas 🐼</a></li>
+  <li><a href="https://github.com/Erotemic/fireducks">FireDucks 🔥🦆</a></li>
+  <li><a href="https://numpy.org/">NumPy</a></li>
+  <li><a href="https://www.python.org/">Python 3.7+</a></li>
+</ul>
