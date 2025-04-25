@@ -36,12 +36,12 @@ cd FireDucks_vs._Pandas_Comparisons</code></pre>
   <li><strong>Run the Script:</strong>
     <pre><code>python fireducks_vs_pandas_sales_benchmark.py</code></pre>
 
-    <p>The script will:</p>
-    <ul>
-      <li>Generate a CSV with 1M rows</li>
-      <li>Run timed operations using both libraries</li>
-      <li>Print performance results to the console</li>
-    </ul>
+    The script will:
+    
+      Generate a CSV with 1M rows
+      Run timed operations using both libraries
+      Print performance results to the console
+    
   </li>
 </ol>
 
@@ -58,14 +58,14 @@ cd FireDucks_vs._Pandas_Comparisons</code></pre>
 <h2>📊 Sample Output</h2>
 
 <pre><code>✅ Created 'sales_data.csv'
-📄 Pandas Read Time: 1.2423 sec
-🔥 FireDucks Read Time: 0.3391 sec
-📉 Pandas Filter Time: 0.0874 sec
-🔥 FireDucks Filter Time: 0.0256 sec
-📊 Pandas GroupBy Time: 0.0934 sec
-🔥 FireDucks GroupBy Time: 0.0312 sec
-🔽 Pandas Sort Time: 0.0047 sec
-🔥 FireDucks Sort Time: 0.0021 sec
+📄 Pandas Read Time: 0.8643 sec
+🔥 FireDucks Read Time: 0.0347 sec
+📉 Pandas Filter Time: 0.0511 sec
+🔥 FireDucks Filter Time: 0.0009 sec
+📊 Pandas GroupBy Time: 0.0481 sec
+🔥 FireDucks GroupBy Time: 0.0029 sec
+🔽 Pandas Sort Time: 0.0007 sec
+🔥 FireDucks Sort Time: 0.0004 sec
 ✅ Sales Benchmark Completed!</code></pre>
 
 <hr>
